@@ -13,6 +13,22 @@
             "group": "MySQL",
             "database": "testdb",
             "username": "root"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "PantheonAPI_MSSQL",
+            "group": "PantheonAPI_MSSQL",
+            "username": "sa",
+            "password": "Tale1234Demo!",
+            "database": "Pantheon_API_db"
         }
     ]
 }

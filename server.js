@@ -28,13 +28,16 @@ db.sequelize.sync({ force: false }).then(() => {
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Početna stranica API-a. Da se javi da je živ!" });
 });
 
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 
 require("./app/routes/turorial.routes")(app);
+
+//Products
+require("./app/routes/product.routes")(app);
 
 
 // set port, listen for requests

@@ -1,0 +1,53 @@
+MS SQL  install
+
+https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+      --Download and install
+
+Postavke korisnika i baze 
+
+-MS SQL verzija  
+    -//promjena porta u  1433
+    -//localhost,1433
+    -//kreiranje baze > database > Kreiranje Baze podataka.sql
+    
+
+-Konektor mssql
+
+module.exports = {
+    HOST: "localhost",
+    PORT: "1433",
+    USER: "sa",
+    PASSWORD: "Tale1234Demo!",
+    DB: "Pantheon_API_db",
+    dialect: "mssql",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+  };
+
+  -konektor mysql 
+  module.exports = {
+    HOST: "localhost",
+    USER: "root",
+    PASSWORD: "Tale1234Demo!",
+    DB: "testdb",
+    dialect: "mysql",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+  };
+
+-Linked server
+  -ODBC driver
+
+Microsoft OLE DB provider for ODBC drivers
+MySQL_ODBC_driver
+    USER: "root",
+    PASSWORD: "Tale1234Demo!",
+    DB: "testdb",

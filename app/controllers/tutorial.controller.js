@@ -104,7 +104,6 @@ exports.findOne = (req, res) => {
         });
 };
 
-
 exports.update = (req, res) => {
     const id = req.params.id;
 
@@ -154,7 +153,6 @@ exports.delete = (req, res) => {
         });
 };
 
-
 exports.deleteAll = (req, res) => {
     Tutorial.destroy({
         where: {},
@@ -170,6 +168,7 @@ exports.deleteAll = (req, res) => {
             });
         });
 };
+
 
 exports.findAllPublished = (req, res) => {
     Tutorial.findAll({ where: { published: true } })
